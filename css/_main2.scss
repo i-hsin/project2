@@ -1,0 +1,366 @@
+h1{
+    font-size: 18px;
+    color: #56C4C5;
+}
+
+h2{
+    font-size: 48px;
+}
+h3{
+    font-size: 32px;
+    font-weight: bold;
+    padding-bottom: 16px;
+}
+h4{
+    font-size: 24px;
+    font-weight: normal;
+    padding-bottom: 24px;
+}
+p{
+    font-size: 20px;
+    font-weight: normal;
+}
+
+.buttom {
+    display: block; 
+    padding: 8px 32px;
+    text-align: center;
+    border-radius: 20px;
+    color: #FFFFFF;
+    background-color: #56C4C5;
+    border: 1px solid #56C4C5;
+}
+.buttom:hover{
+    color: #56C4C5;
+    background-color: #FFFFFF;
+    border: 1px solid #56C4C5;
+
+}
+
+.container{
+    max-width: 1120px;
+    margin: 0 auto;
+    padding: 0px 20px;
+}
+
+.decoration{
+    position: relative;
+    .bg{
+        background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/f70f00178a7f0baa31e9c01634303d8562cfe93a/chatTalker_images/banner.svg);
+        background-repeat: no-repeat;  
+        position: absolute;
+        width: 885px;
+        height: 559px;
+        top: 0px;
+        right: 0px;
+        z-index: -99;
+    }
+}
+
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 24px 0px;
+    a{
+        display: block;  
+    }
+    .logo img{
+        max-width: 180px;
+    }
+    .buttom{
+        background-color: #FF5D50;
+        border: 1px solid transparent;
+        &:hover{
+            color: #FF5D50;
+            background-color:#FFFFFF ;
+            border: 1px solid #FF5D50;
+        }
+    }
+
+}
+
+.decoration{
+    position: relative;
+    .bg img{
+        position: absolute;
+        z-index: -99;
+        top: 0;
+        right: 0;
+    }   
+    .bg-ball img{
+        width: 361px;
+        position: absolute;
+        z-index: -99;
+        top: 876px;
+        left: -246px;
+    }
+}
+
+.banner{
+    h2{
+        font-weight: bold;
+        padding-top: 92px;
+        padding-bottom: 16px;
+    }
+    p{
+        font-size: 16px;
+        padding-bottom: 269px;
+    }
+}
+
+.main{
+    margin-bottom: 100px;
+    h3{
+        text-align: center;
+    }
+    .choice{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;    
+    }
+    .price-list{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        .price-item{
+            max-width: 444px;
+            padding-left: 1%;
+            padding-right: 1%;    
+        }
+        .price{
+            display: flex;
+            align-items: center;
+        }
+    }
+    .ckeck-list li{
+        display: flex;
+    }
+}
+
+.main{
+    h3{
+        padding-bottom: 48px;
+    }
+    .choice li{                  
+        padding-left: 16px;
+        margin-bottom: 48px;
+        .buttom{
+            color: #56C4C5;
+            background-color: #FFFFFF;
+            border: 1px solid #56C4C5;
+            padding: 12px 32px;
+            &.active{
+                color: white;
+                background-color: #56C4C5;
+            }
+            &:hover{
+                color: white;
+                background-color: #56C4C5;
+            }
+        }
+    }
+    .price-list{
+        text-align: center;
+        .price-body{
+            border-radius: 12px; 
+            background-color: #FFFFFF;
+            box-shadow: 0px 2px 10px #00000014;
+            padding: 16px  32px 24px 24px;
+            h4{
+                font-weight: bold;
+                border-bottom:  1px solid lightgrey;
+                padding-bottom: 16px;
+            }
+            p{
+                font-size: 15px;
+                padding: 32px 0px; 
+
+            }
+            .ckeck p{ 
+                text-align: left;
+                padding: 8px 0px ;
+                padding-left: 12px;      
+            } 
+            .buttom {
+                margin: 0 auto;
+                width: 72px;   
+                margin-top: 32px;        
+            } 
+        }
+    }
+}
+
+
+.main .price{
+    padding-bottom: 32px;
+    .price-block{
+        width: 169px;
+        border-radius: 12px; 
+        background-color: #F5F5F5;
+        p{
+            font-size: 12px;
+            padding-top: 24px ;
+            padding-bottom: 8px;
+        }
+        span{
+            display: block;
+            font-size: 32px;
+            color: #56C4C5;
+            padding-bottom:24px ;
+        }
+        h3{
+            font-weight: normal;
+            padding-bottom:24px ;
+        }
+        sub{
+            font-size: 12px;
+            padding-left: 8px;          
+        }
+    }
+    .equal{
+        padding: 0 21px;
+    }  
+}
+
+.question{
+    text-align: center;
+    .question-item{
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+.question{
+    h3{
+        padding-bottom: 48px;
+    }
+    .question-item{
+        display: flex;
+        flex-direction: column ;
+        padding: 16px 32px;
+        border-radius: 12px; 
+        background-color: #FFFFFF;
+        box-shadow: 0px 2px 10px #00000014;
+        margin-bottom: 16px;
+        .question-title{
+            display: flex;
+            justify-content: space-between;
+            h1{
+                color:#221E1F;
+                padding: 16px 0;
+                &.active{
+                    color: #56C4C5;
+                    font-weight: bold;
+                }
+            }
+        }
+        .ans {
+            display: none;
+            text-align: left;
+            color: #747474;
+            font-size: 16px;
+        }
+    }
+}
+
+.copyright{
+    p{
+        text-align: center;
+        margin-top: 100px;  
+        background-color: #F5F5F5;
+        padding: 16px 0px;
+    }
+}
+
+
+.to-top {
+    position: fixed;
+    right: 50px;
+    bottom: 20%;
+    z-index: 99;     
+    a{
+        display: block;
+        width: 71px;
+        height: 71px;
+        border-radius: 50%;
+        background-color: #56C4C5;
+        border: 1px solid #56C4C5 ;
+        color: white;
+        font-weight: bold;
+        font-size: 14px;
+        font-family: 'Wendy One';
+        text-align: center;
+        text-decoration: none;
+        line-height: 71px;
+        &:hover{
+            color:  #56C4C5;;
+            background-color: white; 
+        }
+    } 
+}
+
+@media(max-width:767px) {
+    .bg{
+        display: none;
+    }
+}
+
+@media(max-width:767px){
+    .header{
+        position: fixed;
+        top:0;
+        right: 0;
+        left: 0;
+        background: #FFFFFF;
+        border-bottom: 3px solid #FFD153;
+        z-index:5
+    }
+        .logo{
+            margin-left: 20px;
+        }  
+        .a{
+            margin-right: 20px;
+        }
+    
+}
+
+@media(max-width:767px) {
+    .banner{
+        background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/f70f00178a7f0baa31e9c01634303d8562cfe93a/chatTalker_images/banner_sm.svg);
+        background-repeat: no-repeat;
+        background-position: right top;
+    }
+}
+
+@media(max-width:767px) {
+    .price-item{
+        min-width: 335px;
+        margin-bottom: 24px;      
+    }
+}
+
+@media(max-width:767px) {
+    .question{
+        min-width: 334px;
+        h1{
+            font-size: 16px;
+        }
+    }
+}
+
+@media(max-width:767px) {
+    .to-top{
+        right: 16px;
+        a{
+            font-size: 14px;
+            width: 50px;
+            height: 50px; 
+            line-height: 50px;
+        }
+    }
+}
+
+
+
