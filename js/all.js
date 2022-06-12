@@ -1,5 +1,5 @@
 $(document).ready(function(){
-    $('.to-top a').click(function (e) {
+    $('.top a').click(function (e) {
         e.preventDefault();
         $('html,body').animate({scrollTop: 0 }, 700);
     });

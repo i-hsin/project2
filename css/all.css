@@ -76,6 +76,10 @@ sub {
   vertical-align: sub;
 }
 
+* {
+  outline: 1px solid black;
+}
+
 .container {
   max-width: 1120px;
   margin: 0 auto;
@@ -112,7 +116,7 @@ p {
   display: block;
   padding: 8px 32px;
   text-align: center;
-  border-radius: 20px;
+  border-radius: 27px;
   color: #FFFFFF;
   background-color: #56C4C5;
   border: 1px solid transparent;
@@ -393,7 +397,6 @@ p {
 .main-descriptipn .buttom:hover {
   width: 136px;
   padding: 12px 0px;
-  margin-bottom: 32px;
 }
 
 .comment {
@@ -451,7 +454,8 @@ p {
 .comment .comment-item .comment-body p {
   font-size: 16px;
 }
-.comment .comment-item .star {
+
+.star {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -459,7 +463,7 @@ p {
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
-.comment .comment-item .star .rank {
+.star .rank {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -467,7 +471,7 @@ p {
       -ms-flex-align: center;
           align-items: center;
 }
-.comment .comment-item .star .rank img {
+.star .rank img {
   display: block;
   position: relative;
   width: 16px;
@@ -482,7 +486,7 @@ p {
   background-size: 1366px;
   background-position: center;
   background-repeat: repeat-x;
-  max-height: 503px;
+  max-height: 559px;
   margin-top: 134px;
   position: relative;
 }
@@ -499,13 +503,13 @@ p {
   display: inline;
 }
 
-.to-top {
+.top {
   position: fixed;
   right: 50px;
   bottom: 20%;
   z-index: 99;
 }
-.to-top a {
+.top a {
   display: block;
   width: 71px;
   height: 71px;
@@ -520,7 +524,7 @@ p {
   text-decoration: none;
   line-height: 71px;
 }
-.to-top a:hover {
+.top a:hover {
   color: #56C4C5;
   background-color: white;
 }
@@ -552,6 +556,7 @@ p {
 }
 @media (max-width: 767px) {
   .header {
+    padding-right: 20px;
     position: fixed;
     top: 0;
     right: 0;
@@ -607,8 +612,7 @@ p {
 
   .media-item {
     margin-bottom: 24px;
-    min-width: 355px;
-    min-height: auto;
+    width: 100%;
   }
 }
 @media (max-width: 767px) {
@@ -698,10 +702,10 @@ p {
   }
 }
 @media (max-width: 767px) {
-  .to-top {
+  .top {
     right: 16px;
   }
-  .to-top a {
+  .top a {
     font-size: 14px;
     width: 50px;
     height: 50px;

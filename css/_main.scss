@@ -1,3 +1,6 @@
+*{
+    outline: 1px solid black;
+}
 .container{
     max-width: 1120px;
     margin: 0 auto;
@@ -31,7 +34,7 @@ p{
     display: block; 
     padding: 8px 32px;
     text-align: center;
-    border-radius: 20px;
+    border-radius: 27px;
     color: #FFFFFF;
     background-color: #56C4C5;
     border: 1px solid transparent;
@@ -283,11 +286,9 @@ p{
         margin-bottom: 32px;
     &:hover{
         width: 136px;
-        padding: 12px 0px;
-        margin-bottom: 32px;
+        padding: 12px 0px;    
         }
-    }       
-       
+    }              
 }
 
 
@@ -343,23 +344,23 @@ p{
                 font-size: 16px; 
 
             }
-
         }
-        .star{  
-            display: flex;  
-            justify-content: space-between;      
-            .rank {
-                display: flex;
-                align-items: center;
-                img{
-                    display: block;
-                    position: relative;
-                    width: 16px;
-                    padding-right: 8px;   
-                    top: 0; 
-                    left: 0;      
-                }
-            }
+    }
+}
+
+.star{  
+    display: flex;  
+    justify-content: space-between;      
+    .rank {
+        display: flex;
+        align-items: center;
+        img{
+            display: block;
+            position: relative;
+            width: 16px;
+            padding-right: 8px;   
+            top: 0; 
+            left: 0;      
         }
     }
 }
@@ -371,7 +372,7 @@ p{
     background-size: 1366px;
     background-position: center;
     background-repeat: repeat-x;
-    max-height: 503px;
+    max-height: 559px;
     margin-top: 134px;
     position: relative;
     h3{
@@ -391,8 +392,7 @@ p{
 }
 
 
-
-.to-top {
+.top {
     position: fixed;
     right: 50px;
     bottom: 20%;
@@ -445,6 +445,7 @@ p{
 
  @media(max-width:767px){
     .header{
+        padding-right: 20px;
         position: fixed;
         top:0;
         right: 0;
@@ -492,8 +493,7 @@ p{
     }
     .media-item {     
         margin-bottom: 24px;
-        min-width:355px;
-        min-height: auto;
+        width: 100%;
     }
 }
 
@@ -509,6 +509,7 @@ p{
 
     }
 }
+
 
 @media(max-width:767px) {
     .main{
@@ -559,7 +560,7 @@ p{
 }
 
 @media(max-width:767px) {
-    .to-top{
+    .top{
         right: 16px;
         a{
             font-size: 14px;
